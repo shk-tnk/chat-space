@@ -25,15 +25,6 @@
 - belongs_to :user
 - belongs_to :group
 
-## groups_members table
-|Column|Type|Options|
-|------|----|-------|
-|gropu_id|integer|null: false, foreign_key: true|
-|member_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :group
-- belongs_to :member
-
 ## messages table
 |Column|Type|Options|
 |------|----|-------|
