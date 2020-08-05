@@ -13,15 +13,15 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|member_id|integer|foreign_key: true|
 ### Association
-- has_many :mambers
+- has_many :members, through: groups
 
 ## members table
 |Column|Type|Options|
 |------|----|-------|
 |gropu_id|integer|null: false, foreign_key: true|
 ### Association
+- belongs_to :user
 - belongs_to :group
 
 ## messages table
@@ -32,3 +32,4 @@
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
+- belongs_to :group
