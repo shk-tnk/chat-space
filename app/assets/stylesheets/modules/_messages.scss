@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+.Wrapper {
+  display: flex;
+}
+.SideBar {
+  width: 300px;
+  color: #ffffff;
+}
+
+.LeftHeader {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  align-items: center;
+  &__list {
+    height: 20px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+  }
+    &__name {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__icons {
+      margin-left: 5px;
+    }
+}
+
+.LeftBody {
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  background-color: #2f3e51;
+  &__group-list {
+    padding: 20px 0 40px;
+  }
+    &__group-name {
+      font-size: 15px;
+    }
+    &__message {
+      font-size: 11px;
+      margin-top: 5px;
+    }
+}
+
+
+.MainChat {
+  width: calc(100vw - 300px);
+}
+
+.RightHeader {
+  height: 100px;
+  padding: 0 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  &__group-name {
+    color: #333333;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  &__member-list {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 15px;
+    display: flex;
+  }
+  &__member {
+    padding-right: 5px;
+  }
+  &__edit-btn {
+    height: 40px;
+    color: #38aef0;
+    text-decoration: none;
+    border: 1px solid #38aef0;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 28px;
+    display: block;
+  }
+}
+
+.MessageField {
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  padding: 35px 40px 0;
+}
+
+.MessageBox {
+  margin-bottom: 46px;
+}
+
+.MessageInfo {
+  display: flex;
+  &__user-name {
+    color: #434a54;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__date {
+    color: #999999;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+
+.Message {
+  margin-top: 12px;
+  &__content {
+    color: #434a54;
+    font-size: 14px;
+  }
+}
+
+.RightFooter {
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 50px 20px 40px;
+  box-sizing: border-box;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-around;
+  &__contents {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+  }
+    &__input-contents {
+      height: 50px;
+      width: 100%;
+      border: none;
+      padding: 0 45px 0 15px;
+    }
+      &__input-img {
+        height: 50px;
+        position: absolute;
+        right: 10px;
+        }
+        .fa-image {
+          line-height: 50px;
+          font-size: 25px;
+        }
+    &__submit {
+      height: 50px;
+      border: none;
+      color: #ffffff;
+      font-size: 16px;
+      background-color: #38AEF0;
+      padding: 0 30px;
+      margin-left: 15px;
+    }
+}
+
+.Hidden {
+  display: none;
+}

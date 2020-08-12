@@ -1,0 +1,38 @@
+.MainChat
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__group-name
+        test
+      %ul.RightHeader__member-list
+        Member:
+        %li.RightHeader__member
+          shoko,masa
+    %a.RightHeader__edit-btn(href="#")
+      Edit
+  .MessageField
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__user-name
+          shoko
+        .MessageInfo__date
+          2020/08/11 21:00
+      .Message
+        .Message__content
+          test
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__user-name
+          shoko
+        .MessageInfo__date
+          2020/08/11 21:10
+      .Message
+        .Message__content
+          test2
+  .RightFooter
+    %form.Form
+      .Form__contents
+        %input.Form__input-contents
+          %label.Form__input-img
+            = icon('far', 'image Form__icon')
+            %input.Hidden{type: "file"}
+      %input.Form__submit{type: "submit", name: "commit", value: "Send"}
