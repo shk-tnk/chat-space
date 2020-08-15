@@ -26,6 +26,12 @@
       font-weight: bold;
     }
     &__icons {
+      color: #ffffff;
+      font-size: 16px;
+      display: flex;
+      justify-content: end;
+    }
+    &__icon {
       margin-left: 5px;
     }
 }
