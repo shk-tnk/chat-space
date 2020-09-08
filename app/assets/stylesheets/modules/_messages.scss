@@ -34,6 +34,9 @@
     &__icon {
       margin-left: 5px;
     }
+      .link-icon {
+        color: #ffffff;
+      }
 }
 
 .LeftBody {
@@ -49,6 +52,10 @@
     &__message {
       font-size: 11px;
       margin-top: 5px;
+    }
+    .link-group {
+      color: #ffffff;
+      text-decoration: none;
     }
 }
 
@@ -94,6 +101,7 @@
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
   padding: 35px 40px 0;
+  overflow:scroll;
 }
 
 .MessageBox {

@@ -5,19 +5,16 @@
         = current_user.name
       %ul.LeftHeader__icons
         %li.LeftHeader__icon
-          = link_to '#' do
+          = link_to new_group_path, class: "link-icon" do
             = icon('fas', 'edit')
         %li.LeftHeader__icon
-          = link_to edit_user_path(current_user) do
+          = link_to edit_user_path(current_user), class: "link-icon" do
             = icon('fas', 'cog')
   .LeftBody
-    .LeftBody__group-list
-      .LeftBody__group-name
-        test
-      .LeftBody__message
-        まだメッセージはありません
-    .LeftBody__group-list
-      .LeftBody__group-name
-        test2
-      .LeftBody__message
-        まだメッセージはありません2
+    - current_user.groups.each do |group|
+      .LeftBody__group-list
+        = link_to group_messages_path(group), class: "link-group" do
+          .LeftBody__group-name
+            = group.name
+          .LeftBody__message
+            = group.show_last_message
